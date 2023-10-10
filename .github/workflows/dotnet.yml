@@ -35,7 +35,7 @@ jobs:
     needs: tags
     uses: ./.github/workflows/Docker.yml
     with:
-      image_name: "AndreBenjamin/dote-net-project"
+      image_name: "andrebenjamin/dote-net-project"
       image_version: "${{ needs.tags.outputs.new_version }}"
       image_build_args: ""
       image_context: .
