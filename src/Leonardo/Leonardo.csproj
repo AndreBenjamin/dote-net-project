@@ -1,11 +1,16 @@
-
-    <Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-
-    <TargetFramework>net8.0</TargetFramework>
-
+        <TargetFramework>net8.0</TargetFramework>
+        <PackageId>benjamin.andre.Fibonacci</PackageId>
     </PropertyGroup>
 
-    </Project>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    </ItemGroup>
+
+</Project>
